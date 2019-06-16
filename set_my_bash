@@ -1,0 +1,23 @@
+export HOMEBREW_NO_AUTO_UPDATE=true		#禁止homebrew自动更新
+
+#代理设置
+
+export http_proxy=http://127.0.0.1:1087
+export https_proxy=$http_proxy
+alias set_proxy="export http_proxy=$http_proxy;export https_proxy=$http_proxy;env|grep proxy"
+alias unset_proxy='unset http_proxy;unset https_proxy;env|grep proxy'
+#alias pc='/usr/local/bin/proxychains4'
+#alias composer="pc /usr/local/bin/composer"
+
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+export PATH="/usr/local/opt/php@7.3/bin:/usr/local/opt/php@7.3/sbin:$PATH"
+alias vim='/usr/local/bin/vim'
+alias ll='ls -al'
+alias bs='brew services'
+alias xdebug_start='export XDEBUG_CONFIG="idekey=PHPSTORM"'
+alias xdebug_stop='unset XDEBUG_CONFIG'
+alias laravel='/Users/zhiyuan/.composer/vendor/bin/laravel'
+alias symfony='/Users/zhiyuan/.composer/vendor/bin/symfony'
+alias php-parse='/Users/zhiyuan/.composer/vendor/bin/php-parse'
+alias yakpro='/Users/zhiyuan/.composer/vendor/bin/yakpro'
+alias open='open -a VsCode'
